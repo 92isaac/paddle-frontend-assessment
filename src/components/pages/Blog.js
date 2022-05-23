@@ -9,7 +9,7 @@ const Blog = () => {
   useEffect(() =>{
     const contactCall =async ()=>{
       try{
-          const res = await  axios.get(`https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc`)
+          const res = await  axios.get(`https://api.github.com/search/repositories?q=created:>2021-08-13&sort=stars&order=desc&page=2`)
           .then(res =>{
             setPost(res.data.items)
             setLoading(true)

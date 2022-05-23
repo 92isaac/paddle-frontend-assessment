@@ -3,7 +3,9 @@ import "./card.css"
 
 const Cards = ({details}) => {
   return (
-    <div className="card-container">
+<div className='container'>
+    <div className='row'>
+    <div className="col card-container">
          <div className="card-img">
         <img src={details.owner.avatar_url} />
       </div>
@@ -17,6 +19,8 @@ const Cards = ({details}) => {
         </div>
       </div>
     </div>
+    </div>
+</div>
   )
 }
 
